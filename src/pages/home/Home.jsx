@@ -1,6 +1,7 @@
 import React from "react";
 import workers from "/src/assets/images/main-photo.webp";
 import workers2 from "/src/assets/images/photo.jpeg";
+import doctor from "/src/assets/images/doctor.jpg";
 import Call from "../../components/call/Call";
 import { Link } from "react-router-dom";
 import HomeComp from "../../components/home/HomeComp";
@@ -9,7 +10,7 @@ import { IoMdTime } from "react-icons/io";
 const Home = () => {
   return (
     <>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-48 px-10 pt-10 md:mt-28 mt-20 bg-gradient-to-l from-blue-400">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-48 px-10 py-10 md:mt-28 mt-20 bg-gradient-to-l from-blue-400">
         <div className="pt-10">
           <h1 className="md:text-6xl text-3xl">Sizning sog'ligingiz - bizning ishimiz</h1>
           <p className="mt-5">
@@ -28,7 +29,7 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <img src={workers} alt="employee" className="w-[40rem]" />
+          <img src={doctor} alt="employee" className="w-[40rem]" />
         </div>
       </div>
       <div className="flex flex-col md:flex-row gap-10 mt-16 ">
