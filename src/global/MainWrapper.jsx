@@ -12,7 +12,7 @@ const MainWrapper = (routes) => {
             <div className="flex flex-col min-h-screen w-[100%]">
               <ScrollRestoration />
               <Navbar />
-              <main className="flex-[100%] flex flex-col items-center md:mt-16">{route.element}</main>
+              <main className="flex-[100%] flex flex-col items-center">{route.element}</main>
               <Footer />
             </div>
           ),

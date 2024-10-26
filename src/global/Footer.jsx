@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/logo.webp";
+import logo from "../assets/images/logo.jpg";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaRegAddressCard } from "react-icons/fa";
@@ -23,13 +23,13 @@ const Footer = () => {
             <p>
               <b>Manzil:</b>
             </p>
-            <p>Uchtepa tumani, Qatortol ko'chasi</p>
+            <p>Sebzor</p>
           </div>
           <div>
             <p>
               <b>Orientr:</b>
             </p>
-            <p>Oqtepa lavashni to'g'risida</p>
+            <p>Oqtepa lavashni to'g'risida (namuna)</p>
           </div>
           <div>
             <p>
@@ -39,11 +39,11 @@ const Footer = () => {
           </div>
           <div className="flex">
             <BsFillTelephoneFill />{" "}
-            <a href="tel:+998889251111">+998 (88) 925-11-11</a>
+            <a href="tel:+998991100033">+998 (99) 110-00-33</a>
           </div>
           <div className="flex">
             <BsFillTelephoneFill />{" "}
-            <a href="tel:+998889251111">+998 (88) 925-11-11</a>
+            <a href="tel:+998991100030">+998 (99) 110-00-30</a>
           </div>
           <div className="flex">
             <MdOutlineEmail /> <p>Vatantibbiyotmarkazi@gmail.com</p>
@@ -57,18 +57,18 @@ const Footer = () => {
         </div>
         <div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2998.446636264613!2d69.175495!3d41.27738300000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae89671f2aea5d%3A0x444523068491c2c!2sVatan%20Tibbiyot%20Markazi!5e0!3m2!1suz!2sus!4v1729926329965!5m2!1suz!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d16085.118637508229!2d69.24815590937108!3d41.33500183876555!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIwJzAzLjQiTiA2OcKwMTUnMDMuMSJF!5e0!3m2!1sen!2s!4v1729940251670!5m2!1sen!2s"
             width="100%"
             height="100%"
-            allowfullscreen=""
+            allowfullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
-      <div className="md:px-48 bg-green-300 grid grid-cols-3 gap-5 justify-items-center items-center py-10 border-t-blue-700 border-t-4">
-        <div>
-          <img src={logo} alt="logo" className="w-48" />
+      <div className="md:px-48 px-10 bg-[#DBDCDE] grid md:grid-cols-3 grid-cols-1 gap-5 justify-items-center items-center py-10 border-t-blue-700 border-t-4">
+        <div className="flex md:items-start items-canter flex-col">
+          <img src={logo} alt="logo" className="w-24" />
           <p>
             ХК «Vatan Med City» ОГРН 1187746719610 ИНН 9723058626 Лицензия
             Л041-01148-78/00287864 от 25.12.2020 Учтепинский район, 26-й

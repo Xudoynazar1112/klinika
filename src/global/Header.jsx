@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/images/logo.webp";
+import logo from "../assets/images/logo.jpg";
 import { Link } from "react-router-dom";
 import Call from "../components/call/Call";
 import { Menu, X } from "lucide-react";
@@ -11,8 +11,8 @@ const Header = () => {
   };
   return (
     <>
-      <div className="flex justify-between items-center w-full md:px-48 px-5 py-3">
-        <img src={logo} alt="logo" className="md:w-48 w-28" />
+      <div className="flex justify-between items-center w-full md:px-48 px-5 py-3 bg-[#DBDCDE] fixed top-0">
+        <img src={logo} alt="logo" className="md:w-24 w-16" />
         <ul className="md:flex md:gap-5 md:text-lg hidden">
           <li>
             <Link to={"#"}>Klinika haqida</Link>
@@ -27,7 +27,7 @@ const Header = () => {
             <Call />
           </li>
           <li>
-            <select name="Lang" id="lang">
+            <select name="Lang" id="lang" className="rounded-xl px-1">
               <option value="uz">O'zbek</option>
               <option value="ru">Rus</option>
             </select>
@@ -36,14 +36,14 @@ const Header = () => {
         <div className="md:hidden inline">
           <button
             onClick={toggleHandle}
-            className="text-4xl transition-colors duration-300 "
+            className="text-4xl transition-colors duration-300 bg-[#DBDCDE]"
           >
             {isOpen ? <X /> : <Menu />}
           </button>
         </div>
       </div>
       {isOpen && (
-        <ul className="flex flex-col pt-16 items-start pl-10 gap-5 text-xl fixed right-0 top-20 bg-slate-50 h-full w-[70%]">
+        <ul className="flex flex-col pt-16 items-start pl-10 gap-5 text-xl fixed right-0 top-28 bg-[#DBDCDE] h-full w-[70%]">
           <li>
             <Link to={"#"}>Klinika haqida</Link>
           </li>

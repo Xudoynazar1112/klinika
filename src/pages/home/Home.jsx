@@ -9,9 +9,9 @@ import { IoMdTime } from "react-icons/io";
 const Home = () => {
   return (
     <>
-      <div className="grid grid-cols-2 gap-10 px-48 pt-10 bg-gradient-to-l from-blue-400">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-48 px-10 pt-10 md:mt-28 mt-20 bg-gradient-to-l from-blue-400">
         <div className="pt-10">
-          <h1>Sizning sog'ligingiz - buzning ishimiz</h1>
+          <h1 className="md:text-6xl text-3xl">Sizning sog'ligingiz - bizning ishimiz</h1>
           <p className="mt-5">
             «Vatan Tibbiyot Markazi – частная клиника в ташкенте, где трудится
             блестящая команда докторов. Мы очень хотим, чтобы жителям нашей
@@ -31,7 +31,7 @@ const Home = () => {
           <img src={workers} alt="employee" className="w-[40rem]" />
         </div>
       </div>
-      <div className="flex gap-10 mt-5">
+      <div className="flex flex-col md:flex-row gap-10 mt-16 ">
         <HomeComp
           icon={IoMdTime}
           head={"Ish vaqti"}
@@ -54,12 +54,12 @@ const Home = () => {
           }
         />
       </div>
-      <div className="grid grid-cols-2 gap-10 px-48 py-10 mt-20 bg-gradient-to-l from-blue-400">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-48 px-10 py-10 mt-20 bg-gradient-to-l from-blue-400">
         <div>
           <img src={workers2} alt="employee" className="w-[37rem]" />
         </div>
         <div>
-          <h1>Klinika haqida</h1>
+          <h1 className="md:text-6xl text-4xl">Klinika haqida</h1>
           <p className="mt-5">
             Медицинский центр “Vatan Tibbiyot Markazi” – это учреждение,
             предлагающее широкий спектр медицинских услуг, включая амбулаторную
