@@ -34,10 +34,10 @@ const Header = () => {
           </li>
         </ul>
         <div className="md:hidden flex justify-around items-center pl-5">
-          <p className="text-green-500 text-center uppercase">Estelife medical center</p>
+          <p className="text-[#006769] text-center uppercase">Estelife medical center</p>
           <button
             onClick={toggleHandle}
-            className="text-4xl transition-colors duration-300 bg-[#DBDCDE]"
+            className="text-sm ml-7 transition-colors duration-300 bg-[#DBDCDE]"
           >
             {isOpen ? <X /> : <Menu />}
           </button>
@@ -45,29 +45,29 @@ const Header = () => {
       </div>
       {isOpen && (
         <ul className="flex flex-col pt-16 items-start pl-10 gap-5 text-xl fixed right-0 top-20 bg-[#DBDCDE] h-full w-[70%]">
-          <li>
+          <li onClick={toggleHandle}>
             <Link to={"#"}>Klinika haqida</Link>
           </li>
-          <li>
+          <li onClick={toggleHandle}>
             <Link to={"#"}>Xizmatlar</Link>
             <ul className="list-disc pl-5">
-              <li><Link to={'#'}>Urologiya</Link></li>
-              <li><Link to={'#'}>Gnikologiya</Link></li>
-              <li><Link to={'#'}>Endokrinologiya</Link></li>
-              <li><Link to={'#'}>Nevrologiya</Link></li>
-              <li><Link to={'#'}>Pediatriya</Link></li>
-              <li><Link to={'#'}>Lor</Link></li>
-              <li><Link to={'#'}>Stamotoliya</Link></li>
+              <li onClick={toggleHandle}><Link to={'#'}>Urologiya</Link></li>
+              <li onClick={toggleHandle}><Link to={'#'}>Gnikologiya</Link></li>
+              <li onClick={toggleHandle}><Link to={'#'}>Endokrinologiya</Link></li>
+              <li onClick={toggleHandle}><Link to={'#'}>Nevrologiya</Link></li>
+              <li onClick={toggleHandle}><Link to={'#'}>Pediatriya</Link></li>
+              <li onClick={toggleHandle}><Link to={'#'}>Lor</Link></li>
+              <li onClick={toggleHandle}><Link to={'#'}>Stamotoliya</Link></li>
             </ul>
           </li>
-          <li>
+          <li onClick={toggleHandle}>
             <Link to={"#"}>Aloqa</Link>
           </li>
-          <li>
+          <li onClick={toggleHandle}>
             <Call />
           </li>
           <li>
-            <select name="Lang" id="lang">
+            <select name="Lang" id="lang" className="rounded-lg">
               <option value="uz">O'zbek</option>
               <option value="ru">Rus</option>
             </select>
