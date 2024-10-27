@@ -34,7 +34,7 @@ const Header = () => {
           </li>
         </ul>
         <div className="md:hidden flex justify-around items-center pl-5">
-          <p className="text-green-500 text-center">Estetlife medical center</p>
+          <p className="text-green-500 text-center uppercase">Estelife medical center</p>
           <button
             onClick={toggleHandle}
             className="text-4xl transition-colors duration-300 bg-[#DBDCDE]"
@@ -44,7 +44,7 @@ const Header = () => {
         </div>
       </div>
       {isOpen && (
-        <ul className="flex flex-col pt-16 items-start pl-10 gap-5 text-xl fixed right-0 top-28 bg-[#DBDCDE] h-full w-[70%]">
+        <ul className="flex flex-col pt-16 items-start pl-10 gap-5 text-xl fixed right-0 top-20 bg-[#DBDCDE] h-full w-[70%]">
           <li>
             <Link to={"#"}>Klinika haqida</Link>
           </li>
