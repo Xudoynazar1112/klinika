@@ -33,7 +33,8 @@ const Header = () => {
             </select>
           </li>
         </ul>
-        <div className="md:hidden inline">
+        <div className="md:hidden flex justify-around items-center pl-5">
+          <p className="text-green-500 text-center">Estetlife medical center</p>
           <button
             onClick={toggleHandle}
             className="text-4xl transition-colors duration-300 bg-[#DBDCDE]"
