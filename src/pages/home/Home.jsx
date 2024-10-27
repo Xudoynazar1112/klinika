@@ -13,7 +13,7 @@ const Home = () => {
         <div className="pt-10">
           <h1 className="md:text-6xl text-3xl">Sizning sog'ligingiz - bizning ishimiz</h1>
           <p className="mt-5">
-            «Estetlife medical center – частная клиника в ташкенте, где трудится
+            «Estelife medical center – частная клиника в ташкенте, где трудится
             блестящая команда докторов. Мы очень хотим, чтобы жителям нашей
             страны стали доступны все достижения мировой медицины»
           </p>
@@ -61,7 +61,7 @@ const Home = () => {
         <div>
           <h1 className="md:text-6xl text-4xl">Klinika haqida</h1>
           <p className="mt-5">
-            Медицинский центр “Estetlife medical center” – это учреждение,
+            Медицинский центр “Estelife medical center” – это учреждение,
             предлагающее широкий спектр медицинских услуг, включая амбулаторную
             диагностику. В состав центра входят врачи и кандидаты медицинских
             наук с многолетним опытом работы, которые в короткие сроки смогут

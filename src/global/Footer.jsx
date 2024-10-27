@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:mx-40 mx-10 my-10 md:p-10 p-3 bg-[#E1FDFE] rounded-2xl">
         <div className="flex flex-col gap-3">
           <h1 className="md:text-4xl text-2xl pb-3">
-            Ko'p filialli «Estetlife medical center»
+            Ko'p filialli «Estelife medical center»
           </h1>
           <div>
             <p>
@@ -49,7 +49,7 @@ const Footer = () => {
             <MdOutlineEmail /> <p>esterlifemedicalcenter@gmail.com</p>
           </div>
           <div className="flex">
-            <FaRegAddressCard /> <p>https://estetlifemedicalcenter.uz</p>
+            <FaRegAddressCard /> <p>https://estelifemedicalcenter.uz</p>
           </div>
           <div className="pt-5">
             <Call />
@@ -70,7 +70,7 @@ const Footer = () => {
         <div className="flex md:items-start items-canter flex-col">
           <img src={logo} alt="logo" className="w-24" />
           <p>
-            ХК «Estetlife medical center» ОГРН 1187746719610 ИНН 9723058626 Лицензия
+            ХК «Estelife medical center» ОГРН 1187746719610 ИНН 9723058626 Лицензия
             Л041-01148-78/00287864 от 25.12.2020 Учтепинский район, 26-й
             квартал, 24а/1 стр 1 этаж Мўлжал: рядом с Октепа лаваш
           </p>
