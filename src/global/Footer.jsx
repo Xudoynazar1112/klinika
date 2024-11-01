@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/logo.jpg";
+import logo from "/images/logo.jpg";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaRegAddressCard } from "react-icons/fa";
@@ -37,18 +37,18 @@ const Footer = () => {
             </p>
             <p>Du-Yak 24/7 ish vaqti</p>
           </div>
-          <div className="flex">
+          <div className="flex items-center gap-2">
             <BsFillTelephoneFill />{" "}
             <a href="tel:+998991100033">+998 (99) 110-00-33</a>
           </div>
-          <div className="flex">
+          <div className="flex items-center gap-2">
             <BsFillTelephoneFill />{" "}
             <a href="tel:+998991100030">+998 (99) 110-00-30</a>
           </div>
-          <div className="flex">
+          <div className="flex items-center gap-2">
             <MdOutlineEmail /> <p>esterlifemedicalcenter@gmail.com</p>
           </div>
-          <div className="flex">
+          <div className="flex items-center gap-2">
             <FaRegAddressCard /> <p>https://estelifemedicalcenter.uz</p>
           </div>
           <div className="pt-5">
@@ -76,8 +76,8 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col">
-          <Link to={"#"}>Klinika haqida</Link>
-          <Link to={"#"}>Aloqa</Link>
+          <Link to={"/about"}>Klinika haqida</Link>
+          <Link to={"/contact"}>Aloqa</Link>
         </div>
         <div className="icons">
           <p>

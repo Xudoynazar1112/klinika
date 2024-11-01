@@ -1,1 +1,18 @@
-[]
+{
+    "header": {
+        "haqida": "О клинике",
+        "xizmatlar": "Услуги",
+        "services": {
+            "urologiya": "Урология",
+            "gnikologiya": "Гинекология",
+            "endokrinologiya": "Эндокринология",
+            "nevrologiya": "Неврология",
+            "pediatriya": "Педиатрия",
+            "lor": "Лор",
+            "stamotoliya": "Стамотолия"
+        },
+        "aloqa": "Коммуникация",
+        "uz": "Узбекский",
+        "ru": "Русский"
+    }
+}

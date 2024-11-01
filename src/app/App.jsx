@@ -7,7 +7,6 @@ import '../i18n'
 
 
 
-
 const App = () => {
   useEffect(() => {
     AOS.init({
