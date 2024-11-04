@@ -3,7 +3,7 @@ import './HomeComp.css'
 
 const HomeComp = ({ icon: Icon, head, body }) => {
   return (
-    <div className="flex gap-10 w-[20rem] md:w-[25rem] shadowNew rounded-2xl p-3">
+    <div className="flex gap-10 w-[20rem] md:w-[25rem] bg-white text-black dark:bg-gray-900 dark:text-white shadowNew rounded-2xl p-3">
       <div className="text-[5rem] text-blue-400">
         <Icon /> {/* Render the icon component */}
       </div>

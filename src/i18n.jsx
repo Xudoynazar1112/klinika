@@ -5,6 +5,7 @@ import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import uzTranslation from './locales/uz.json'
 import ruTranslation from './locales/ru.json'
+import enTranslation from './locales/en.json'
 
 const language = localStorage.getItem('i18nextLng') || 'uz'
 
@@ -21,7 +22,8 @@ i18n
     lng: language,
     resources: {
         uz: {translation: uzTranslation},
-        ru: {translation: ruTranslation}
+        ru: {translation: ruTranslation},
+        en: {translation: enTranslation}
     }
 
   });

@@ -1,0 +1,19 @@
+{
+    "header": {
+        "haqida": "About Hospital",
+        "xizmatlar": "Services",
+        "services": {
+            "urologiya": "Urology",
+            "gnikologiya": "Gynecology",
+            "endokrinologiya": "Endocrinology",
+            "nevrologiya": "Neurology",
+            "pediatriya": "Pediatrics",
+            "lor": "Lor",
+            "stamotoliya": "Stomatology"
+        },
+        "aloqa": "Contact",
+        "uz": "Uzbek",
+        "ru": "Russian",
+        "en": "English"
+    }
+}

@@ -11,12 +11,12 @@ import { FaHandHoldingMedical } from "react-icons/fa";
 const Home = () => {
   return (
     <>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-48 px-10 py-10 bg-gradient-to-l from-blue-400">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-48 px-10 py-10 bg-gradient-to-l from-blue-400 to-white dark:to-black">
         <div className="pt-10">
-          <h1 className="md:text-6xl text-3xl">
+          <h1 className="md:text-6xl text-3xl text-black dark:text-white">
             Sizning sog'ligingiz - bizning ishimiz
           </h1>
-          <p className="mt-5">
+          <p className="mt-5 text-black dark:text-white">
             «Estelife medical center – частная клиника в ташкенте, где трудится
             блестящая команда докторов. Мы очень хотим, чтобы жителям нашей
             страны стали доступны все достижения мировой медицины»
@@ -24,7 +24,7 @@ const Home = () => {
           <div className="flex pt-20 gap-5">
             <Link
               to={"/contact"}
-              className="border-black border-2 px-4 rounded-2xl text-2xl"
+              className="border-black dark:border-white border-2 px-4 rounded-2xl text-2xl text-black dark:text-white"
             >
               Manzil
             </Link>
