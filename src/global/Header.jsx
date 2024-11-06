@@ -41,7 +41,7 @@ const Header = () => {
   }, [darkMode]);
   return (
     <>
-      <div className="flex justify-between items-center w-full md:px-48 px-5 py-3 bg-white text-black dark:text-white dark:bg-black">
+      <div className="flex justify-between items-center w-full md:px-48 px-5  bg-white text-black dark:text-white dark:bg-black">
         <Link to={"/"}>
           <img src={logo} alt="logo" className="md:w-24 w-16" />
         </Link>
@@ -61,39 +61,39 @@ const Header = () => {
             >
               {t("header.xizmatlar")}
             </Link>
-            <ul className="absolute group-hover:flex group-hover:flex-col hidden bg-white dark:bg-black">
-              <li className="hover:bg-blue-700 p-2">
+            <ul className="absolute opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-300 bg-white dark:bg-black">
+              <li className="hover:bg-blue-700 transition-all p-2">
                 <Link to={"/urologiya"} className="dark:text-white">
                   {t("header.services.urologiya")}
                 </Link>
               </li>
-              <li className="hover:bg-blue-700 p-2">
+              <li className="hover:bg-blue-700 transition-all p-2">
                 <Link to={"/gnikologiya"} className="dark:text-white">
                   {t("header.services.gnikologiya")}
                 </Link>
               </li>
-              <li className="hover:bg-blue-700 p-2">
+              <li className="hover:bg-blue-700 transition-all p-2">
                 <Link to={"/endokrinologiya"} className="dark:text-white">
                   {t("header.services.endokrinologiya")}
                 </Link>
               </li>
-              <li className="hover:bg-blue-700 p-2">
+              <li className="hover:bg-blue-700 transition-all p-2">
                 <Link to={"/nevrologiya"} className="dark:text-white">
                   {t("header.services.nevrologiya")}
                 </Link>
               </li>
-              <li className="hover:bg-blue-700 p-2">
+              <li className="hover:bg-blue-700 transition-all p-2">
                 <Link to={"/pediatriya"} className="dark:text-white">
                   {t("header.services.pediatriya")}
                 </Link>
               </li>
-              <li className="hover:bg-blue-700 p-2">
+              <li className="hover:bg-blue-700 transition-all p-2">
                 <Link to={"/lor"} className="dark:text-white">
                   {t("header.services.lor")}
                 </Link>
               </li>
-              <li className="hover:bg-blue-700 p-2">
-                <Link to={"/stamotoliya"} className="dark:text-white">
+              <li className="hover:bg-blue-700 transition-all p-2">
+                <Link to={"/stamotologiya"} className="dark:text-white">
                   {t("header.services.stamotoliya")}
                 </Link>
               </li>
@@ -145,7 +145,7 @@ const Header = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="fixed right-0 top-0 h-full w-full bg-white text-black dark:bg-black dark:text-white">
+        <div className="fixed right-0 top-0 h-full w-full bg-white text-black dark:bg-black dark:text-white z-10">
           <div className="text-end px-5 pt-5">
             <button
               onClick={toggleHandle}
@@ -155,7 +155,7 @@ const Header = () => {
             </button>
           </div>
           <ul className="flex flex-col pt-16 items-start pl-10 gap-5 text-xl ">
-            <li className="flex justify-between items-center">
+            <li className="flex justify-between items-center gap-32">
               <Link
                 onClick={toggleHandle}
                 to={"/about"}
@@ -177,7 +177,7 @@ const Header = () => {
               >
                 {t("header.xizmatlar")}
               </Link>
-              <ul className="list-disc pl-5">
+              <ul className="list-disc pl-5 transition-all">
                 <li onClick={toggleHandle}>
                   <Link
                     to={"/urologiya"}
@@ -194,11 +194,11 @@ const Header = () => {
                     {t("header.services.gnikologiya")}
                   </Link>
                 </li>
-                <li
-                  onClick={toggleHandle}
-                  className="bg-white text-black dark:bg-black dark:text-white"
-                >
-                  <Link to={"/endokrinologiya"}>
+                <li onClick={toggleHandle}>
+                  <Link
+                    to={"/endokrinologiya"}
+                    className="bg-white text-black dark:bg-black dark:text-white"
+                  >
                     {t("header.services.endokrinologiya")}
                   </Link>
                 </li>
@@ -228,7 +228,7 @@ const Header = () => {
                 </li>
                 <li onClick={toggleHandle}>
                   <Link
-                    to={"/stamotoliya"}
+                    to={"/stamotologiya"}
                     className="bg-white text-black dark:bg-black dark:text-white"
                   >
                     {t("header.services.stamotoliya")}

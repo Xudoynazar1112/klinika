@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import '../i18n'
 
 
-
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -16,6 +15,7 @@ const App = () => {
       delay: 100,       // Delay before animation starts
     });
   }, []);
+  
   return (
     <div>
       <RouterProvider router={router} />

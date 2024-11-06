@@ -7,82 +7,67 @@ import HomeComp from "../../components/home/HomeComp";
 import { IoMdTime } from "react-icons/io";
 import { FaLaptopMedical } from "react-icons/fa";
 import { FaHandHoldingMedical } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const [t, i18n] = useTranslation()
   return (
     <>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-48 px-10 py-10 bg-gradient-to-l from-blue-400 to-white dark:to-black">
-        <div className="pt-10">
+        <div data-aos="fade-up" className="pt-10">
           <h1 className="md:text-6xl text-3xl text-black dark:text-white">
-            Sizning sog'ligingiz - bizning ishimiz
+            {t('home.soglik')}
           </h1>
           <p className="mt-5 text-black dark:text-white">
-            «Estelife medical center – частная клиника в ташкенте, где трудится
-            блестящая команда докторов. Мы очень хотим, чтобы жителям нашей
-            страны стали доступны все достижения мировой медицины»
+            {t('home.soglik-body')}
           </p>
-          <div className="flex pt-20 gap-5">
+          <div data-aos="flip-up" className="flex pt-20 gap-5">
             <Link
               to={"/contact"}
               className="border-black dark:border-white border-2 px-4 rounded-2xl text-2xl text-black dark:text-white"
             >
-              Manzil
+              {t('home.manzil')}
             </Link>
             <Call />
           </div>
         </div>
-        <div>
+        <div data-aos="fade-up">
           <img src={doctor} alt="employee" className="w-[40rem]" />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-10 mt-16 ">
+      <div data-aos="fade-up" className="flex flex-col md:flex-row gap-10 mt-16 ">
         <HomeComp
           icon={IoMdTime}
-          head={"ISH VAQTI"}
+          head={t('homeComp.head1')}
           body={
-            "Biz kuniga 24 soat, haftada etti kun ishlaymiz. Shuning uchun, siz uchun qulay bo'lgan uchrashuv vaqtini tanlash siz uchun oson bo'ladi."
+            t('homeComp.body1')
           }
         />
         <HomeComp
           icon={FaLaptopMedical}
-          head={"ZAMONAVIY USKUNALAR"}
-          body={
-            "Biz klinikalarni eng yangi stomatologiya texnologiyalari bilan jihozlaymiz, ular birgalikda aniq tashxis qo'yish imkonini beradi."
-          }
+          head={t('homeComp.head2')}
+          body={t('homeComp.body2')}
         />
         <HomeComp
           icon={FaHandHoldingMedical}
-          head={"KONFOR VA DIQQAT"}
-          body={
-            "Biz har xil ixtisoslikdagi stomatologlar ishtirok etadigan keng qamrovli diagnostika ishlarini olib boramiz."
-          }
+          head={t('homeComp.head3')}
+          body={t('homeComp.body3')}
         />
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-48 px-10 py-10 mt-20 bg-gradient-to-l from-blue-400">
-        <div>
+        <div data-aos="fade-up">
           <img src={workers2} alt="employee" className="w-[37rem]" />
         </div>
-        <div>
-          <h1 className="md:text-6xl text-4xl">Klinika haqida</h1>
+        <div data-aos="fade-up">
+          <h1 className="md:text-6xl text-4xl">{t('klinika.head')}</h1>
           <p className="mt-5">
-            “Vatan tibbiyot markazi” tibbiyot markazi keng turdagi tibbiy
-            xizmatlar, jumladan, ambulator diagnostika xizmatlarini taklif
-            etuvchi muassasa hisoblanadi. Markaz ko‘p yillik tajribaga ega
-            bo‘lgan tibbiyot fanlari doktorlari va nomzodlaridan iborat bo‘lib,
-            ular qisqa vaqt ichida to‘g‘ri tashxis qo‘yish va har qanday
-            kasallikni davolash uchun optimal davolash kursini taklif qilish
-            imkoniyatiga ega.
+            {t('klinika.body1')}
           </p>
           <p className="mt-2">
-            Markazda eng zamonaviy uskunalar, jumladan, ekspert ultratovush
-            tekshiruvi, dopller-ekokardiyografiya, EKG, avtomatlashtirilgan
-            laboratoriya va boshqa ko‘plab uskunalardan foydalaniladi.
+          {t('klinika.body2')}
           </p>
           <p className="mt-2">
-            Markazning fizioterapiya bo‘limida elektroterapiyaning barcha
-            turlari, parafin-ozokerit bilan davolash va terapevtik massaj amalga
-            oshirilib, har qanday kasallikdan xalos bo‘lish, salomatligingizni
-            mustahkamlash imkonini beradi.
+          {t('klinika.body3')}
           </p>
         </div>
       </div>

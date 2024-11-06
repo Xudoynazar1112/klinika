@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:mx-40 mx-10 my-10 md:p-10 p-3 bg-[#E1FDFE] text-black rounded-2xl">
-        <div className="flex flex-col gap-3">
+        <div data-aos="fade-up" className="flex flex-col gap-3">
           <h1 className="md:text-4xl text-2xl pb-3">
             Ko'p filialli «Estelife medical center»
           </h1>
@@ -55,7 +55,7 @@ const Footer = () => {
             <Call />
           </div>
         </div>
-        <div>
+        <div data-aos="fade-up">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d16085.118637508229!2d69.24815590937108!3d41.33500183876555!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIwJzAzLjQiTiA2OcKwMTUnMDMuMSJF!5e0!3m2!1sen!2s!4v1729940251670!5m2!1sen!2s"
             width="100%"

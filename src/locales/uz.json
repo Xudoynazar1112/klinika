@@ -9,11 +9,31 @@
             "nevrologiya": "Nevrologiya",
             "pediatriya": "Pediatriya",
             "lor": "Lor",
-            "stamotoliya": "Stamotoliya"
+            "stamotoliya": "Stamotologiya"
         },
         "aloqa": "Aloqa",
         "uz": "O'zbek",
         "ru": "Rus",
         "en": "Ingiliz"
+    },
+    "home": {
+        "soglik": "Sizning sog'ligingiz - bizning ishimiz",
+        "soglik-body": "Estelife tibbiyot markazi - Toshkent shahridagi xususiy klinika boʻlib, u yerda ishlaydi ajoyib shifokorlar jamoasi. Biz o'z fuqarolarimizni juda xohlaymiz jahon tibbiyotining barcha yutuqlari mamlakat uchun mavjud bo'ldi",
+        "manzil": "Manzil"
+    },
+    "call": "Qo'ng'iroq",
+    "homeComp": {
+        "head1": "ISH VAQTI",
+        "body1": "Biz kuniga 24 soat, haftada etti kun ishlaymiz. Shuning uchun, siz uchun qulay bo'lgan uchrashuv vaqtini tanlash siz uchun oson bo'ladi.",
+        "head2": "ZAMONAVIY USKUNALAR",
+        "body2": "Biz klinikalarni eng yangi stomatologiya texnologiyalari bilan jihozlaymiz, ular birgalikda aniq tashxis qo'yish imkonini beradi.",
+        "head3": "KONFORT VA DIQQAT",
+        "body3": "Biz har xil ixtisoslikdagi stomatologlar ishtirok etadigan keng qamrovli diagnostika ishlarini olib boramiz."
+    },
+    "klinika": {
+        "head": "Klinika haqida",
+        "body1": "“Vatan tibbiyot markazi” tibbiyot markazi keng turdagi tibbiy xizmatlar, jumladan, ambulator diagnostika xizmatlarini taklif etuvchi muassasa hisoblanadi. Markaz ko‘p yillik tajribaga ega bo‘lgan tibbiyot fanlari doktorlari va nomzodlaridan iborat bo‘lib, ular qisqa vaqt ichida to‘g‘ri tashxis qo‘yish va har qanday kasallikni davolash uchun optimal davolash kursini taklif qilish imkoniyatiga ega.",
+        "body2": "Markazda eng zamonaviy uskunalar, jumladan, ekspert ultratovush tekshiruvi, dopller-ekokardiyografiya, EKG, avtomatlashtirilgan laboratoriya va boshqa ko‘plab uskunalardan foydalaniladi.",
+        "body3": "Markazning fizioterapiya bo‘limida elektroterapiyaning barcha turlari, parafin-ozokerit bilan davolash va terapevtik massaj amalga oshirilib, har qanday kasallikdan xalos bo‘lish, salomatligingizni mustahkamlash imkonini beradi."
     }
 }

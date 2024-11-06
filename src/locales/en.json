@@ -15,5 +15,25 @@
         "uz": "Uzbek",
         "ru": "Russian",
         "en": "English"
+    },
+    "home": {
+        "soglik": "Your health is our business",
+        "soglik-body": "Estelife Medical Center is a private clinic in Tashkent, with an excellent team of doctors. We want our citizens to have all the achievements of world medicine available to the country",
+        "manzil": "Address"
+    },
+    "call": "Call",
+    "homeComp": {
+        "head1": "WORKING TIME",
+        "body1": "We work 24 hours a day, seven days a week. Therefore, it will be easy for you to choose a meeting time that is convenient for you.",
+        "head2": "MODERN EQUIPMENT",
+        "body2": "We equip clinics with the latest dental technologies, which together allow accurate diagnosis.",
+        "head3": "COMFORT AND ATTENTION",
+        "body3": "We carry out extensive diagnostic work involving dentists of various specialties."
+    },
+    "klinika": {
+        "head": "About the clinic",
+        "body1": "Vatan Medical Center medical center is an institution that offers a wide range of medical services, including outpatient diagnostic services. The center consists of doctors and candidates of medical sciences with many years of experience, who are able to make the correct diagnosis in a short time and suggest the optimal course of treatment for the treatment of any disease.",
+        "body2": "The center uses state-of-the-art equipment, including expert ultrasound examination, Doppler echocardiography, EKG, automated laboratory and many other equipment.",
+        "body3": "In the center's physiotherapy department, all types of electrotherapy, paraffin-ozokerite treatment, and therapeutic massage are performed, allowing you to get rid of any disease and improve your health."
     }
 }
