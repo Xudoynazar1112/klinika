@@ -10,15 +10,17 @@ import ServicePrice from "../../components/price/ServicePrice";
 
 const Urolog = () => {
   return (
-    <div>
+    <div className="w-full">
       <div className="grid md:grid-cols-2 grid-cols-1 place-items-center gap-10 md:px-48 px-10 py-10 bg-gradient-to-l from-blue-400 to-white dark:to-black">
         <div data-aos="fade-up" className="pt-10">
           <h1 className="md:text-6xl text-3xl text-black dark:text-white">
             Toshkentdagi urolog
           </h1>
-          <p className="mt-5 text-black dark:text-white">
-          В нашей клинике “Estelife medical center” прием ведут опытные высококвалифицирован-
-          ные врачи-урологи, которые ответят на все интересующие вас вопросы. Мы гарантируем индивидуальный подход к каждому пациенту и высокое качество обслуживания!
+          <p className="mt-5 text-black dark:text-white text-wrap w-full">
+            В нашей клинике “Estelife medical center” прием ведут опытные
+            высококвалифицирован- ные врачи-урологи, которые ответят на все
+            интересующие вас вопросы. Мы гарантируем индивидуальный подход к
+            каждому пациенту и высокое качество обслуживания!
           </p>
           <div data-aos="flip-up" className="flex pt-20 gap-5">
             <Link
@@ -31,12 +33,16 @@ const Urolog = () => {
           </div>
         </div>
         <div data-aos="fade-up">
-          <img src={doctor} alt="employee" className="w-[20rem] overflow-clip" />
+          <img
+            src={doctor}
+            alt="employee"
+            className="w-[20rem] overflow-clip"
+          />
         </div>
       </div>
       <div
         data-aos="fade-up"
-        className="flex flex-col md:flex-row gap-10 my-16 justify-center"
+        className="flex flex-col md:flex-row gap-10 my-16 justify-center items-center"
       >
         <HomeComp
           icon={IoMdTime}
@@ -60,8 +66,8 @@ const Urolog = () => {
           }
         />
       </div>
-      <div className="flex md:flex-row gap-10 md:px-48 px-10 py-10 bg-gradient-to-l from-blue-400 to-white dark:to-black">
-        <div className="flex flex-col gap-4 w-2/3">
+      <div className="flex md:flex-row flex-col gap-10 md:px-48 px-10 py-10 bg-gradient-to-l from-blue-400 to-white dark:to-black">
+        <div className="flex flex-col gap-4 md:w-2/3">
           <h2 className="text-3xl font-semibold">Urologiya mutaxasisi</h2>
           <p>
             В нашей клинике прием ведут опытные высококвалифицированные
@@ -98,20 +104,42 @@ const Urolog = () => {
           <img src={doctor} className="w-56 rounded-full" alt="urolog" />
           <h2 className="text-3xl">Allayorov Javohir</h2>
           <span>Vrach-urolog-hirurg</span>
-          <p className="text-center">Ведущий специалист с опытом работы 6 лет</p>
+          <p className="text-center">
+            Ведущий специалист с опытом работы 6 лет
+          </p>
           <div>
-            <a href="tel:+998934301695" className="flex items-center gap-3"><FaPhoneAlt className="text-blue-700" />+998 93 430 16 95</a>
-            <a href="tel:+998905305033" className="flex items-center gap-3"><FaPhoneAlt className="text-blue-700" />+998 90 530 50 33</a>
+            <a href="tel:+998934301695" className="flex items-center gap-3">
+              <FaPhoneAlt className="text-blue-700" />
+              +998 93 430 16 95
+            </a>
+            <a href="tel:+998905305033" className="flex items-center gap-3">
+              <FaPhoneAlt className="text-blue-700" />
+              +998 90 530 50 33
+            </a>
           </div>
-          <a href="https://t.me/support" className="py-3 px-6 bg-green-500 rounded-xl hover:bg-blue-700 hover:text-white transition-all duration-400">Urologga savol</a>
+          <a
+            href="https://t.me/support"
+            className="py-3 px-6 bg-green-500 rounded-xl hover:bg-blue-700 hover:text-white transition-all duration-400"
+          >
+            Urologga savol
+          </a>
         </div>
       </div>
       <div className="md:px-48 px-10 py-10">
         <h2 className="text-3xl">Xizmat narxlari:</h2>
-        <div className="flex justify-between w-full mt-5">
-          <ServicePrice type={"Прием (осмотр) врача-уролога первичный"} price={'110 000'} />
-          <ServicePrice type={"Прием (осмотр) врача-уролога повторный"} price={'60 000'} />
-          <ServicePrice type={"Урологический Массаж простаты"} price={'50 000'} />
+        <div className="flex justify-between items-center md:flex-row flex-col gap-5 w-full mt-5">
+          <ServicePrice
+            type={"Прием (осмотр) врача-уролога первичный"}
+            price={"110 000"}
+          />
+          <ServicePrice
+            type={"Прием (осмотр) врача-уролога повторный"}
+            price={"60 000"}
+          />
+          <ServicePrice
+            type={"Урологический Массаж простаты"}
+            price={"50 000"}
+          />
         </div>
       </div>
     </div>
