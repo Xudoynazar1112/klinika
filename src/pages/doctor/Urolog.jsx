@@ -6,8 +6,10 @@ import { IoMdTime } from "react-icons/io";
 import { FaLaptopMedical, FaPhoneAlt } from "react-icons/fa";
 import { FaHandHoldingMedical } from "react-icons/fa";
 import ServicePrice from "../../components/price/ServicePrice";
+import { useTranslation } from "react-i18next";
 
 const Urolog = () => {
+  const [t, i18n] = useTranslation()
   return (
     <div className="w-full">
       <div className="grid md:grid-cols-2 grid-cols-1 place-items-center gap-10 md:px-48 px-10 py-10 bg-gradient-to-l from-blue-400 to-white dark:to-black">
