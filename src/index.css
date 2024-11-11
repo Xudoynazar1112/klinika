@@ -57,6 +57,64 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.swiper {
+  width: 60%;
+  height: 50%;
+  padding: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 40rem !important;
+  height: 45rem !important;
+}
+
+.swiper-slide .container img {
+  display: block;
+  width: 100%;
+  height: 80%;
+}
+.swiper-slide .container .description {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00959B;
+  padding: 0.5rem 2rem;
+}
+.swiper-slide .container .description h2 {
+  font-size: 1rem;
+}
+
+@media(max-width: 430px) {
+  .swiper {
+    width: 90%;
+    height: 50%;
+    padding: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 15rem !important;
+    height: 25rem !important;
+  }
+  
+  .swiper-slide .container img {
+    display: block;
+    width: 100% !important;
+    height: 80%;
+  }
+  .swiper-slide .container .description {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #00959B;
+    padding: 0.5rem 2rem;
+  }
+  .swiper-slide .container .description h2 {
+    font-size: 1rem;
+  }
+}
 
 @media (prefers-color-scheme: light) {
   :root {

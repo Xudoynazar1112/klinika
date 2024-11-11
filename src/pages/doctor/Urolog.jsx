@@ -1,7 +1,6 @@
 import React from "react";
 import HomeComp from "../../components/home/HomeComp";
 import { Link } from "react-router-dom";
-import Call from "../../components/call/Call";
 import doctor from "/doctor/urolog-doc.webp";
 import { IoMdTime } from "react-icons/io";
 import { FaLaptopMedical, FaPhoneAlt } from "react-icons/fa";
@@ -29,7 +28,7 @@ const Urolog = () => {
             >
               Manzil
             </Link>
-            <Call />
+            <div className='p-1 px-4 bg-green-700 rounded-2xl flex gap-3 items-center justify-center text-white hover:text-green-300'><FaPhoneAlt /><a href='tel:+998991100033' className=' text-2xl text-white hover:text-green-300'>{t('call')}</a></div>
           </div>
         </div>
         <div data-aos="fade-up">

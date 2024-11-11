@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import logo from "/images/logo.png";
 import { Link } from "react-router-dom";
-import Call from "../components/call/Call";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { FaSun } from "react-icons/fa6";
 import { MdNightsStay } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Header = () => {
   const [t, i18n] = useTranslation();
@@ -116,7 +116,15 @@ const Header = () => {
             </button>
           </li>
           <li>
-            <Call />
+            <div className="p-1 px-4 h-full bg-[#00959B] rounded-2xl flex gap-3 items-center justify-center text-white ">
+              <a
+                href="tel:+998991100033"
+                className=" text-2xl text-white hover:text-green-300 transition-all flex gap-3 items-center justify-center"
+              >
+                <FaPhoneAlt />
+                {t("call")}
+              </a>
+            </div>
           </li>
           <li>
             <select
@@ -146,7 +154,8 @@ const Header = () => {
       </div>
       {isOpen && (
         <div className="fixed right-0 top-0 h-full w-full bg-white text-black dark:bg-black dark:text-white z-10">
-          <div className="text-end px-5 pt-5">
+          <div className="text-end px-5 pt-5 flex justify-between items-center">
+            <img src={logo} alt="logo" className="w-24" />
             <button
               onClick={toggleHandle}
               className="text-sm ml-7 transition-colors duration-300 text-end bg-white text-black dark:bg-gray-800 dark:text-white"
@@ -169,6 +178,19 @@ const Header = () => {
               >
                 {darkMode ? <FaSun /> : <MdNightsStay />}
               </button>
+            </li>
+            <li onClick={toggleHandle}>
+              <div className="p-1 px-4 h-full flex gap-3 items-center justify-center text-white ">
+                <div className="bg-[#00959B] rounded-full p-3">
+                  <FaPhoneAlt />
+                </div>
+                <a
+                  href="tel:+998991100033"
+                  className=" text-2xl hover:text-green-300 transition-all flex gap-3 items-center justify-center"
+                >
+                  +998 99 110 00 33
+                </a>
+              </div>
             </li>
             <li onClick={toggleHandle}>
               <Link
@@ -243,9 +265,6 @@ const Header = () => {
               >
                 {t("header.aloqa")}
               </Link>
-            </li>
-            <li onClick={toggleHandle}>
-              <Call />
             </li>
             <li>
               <select
