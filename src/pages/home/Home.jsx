@@ -3,6 +3,7 @@ import workers2 from "/images/photo.jpeg";
 import doctor from "/doctor/main-page.jpg";
 import { Link } from "react-router-dom";
 import HomeComp from "../../components/home/HomeComp";
+import ServicePrice from "../../components/price/ServicePrice";
 import { IoMdTime } from "react-icons/io";
 import { FaLaptopMedical, FaPhoneAlt } from "react-icons/fa";
 import { FaHandHoldingMedical } from "react-icons/fa";
@@ -83,6 +84,23 @@ const Home = () => {
           <p className="mt-2">{t("klinika.body3")}</p>
         </div>
       </div>
+      <div className="md:px-48 px-10 py-10">
+        <h1>Lor xizmat narxlari</h1>
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
+          <ServicePrice type={"Burun ichi blokadasi"} price={"70.000"} />
+          <ServicePrice type={"Burunni yuvish"} price={"70.000"} />
+          <ServicePrice type={"Eshitish naychasini puflash"} price={"40.000"} />
+          <ServicePrice type={"Hiqildoqqa shifobaxsh eritmalarni quyish"} price={"60.000"} />
+          <ServicePrice type={"Ingalyasiya/tubus"} price={"30.000"} />
+          <ServicePrice type={"Kompress"} price={"25.000"} />
+          <ServicePrice type={"Limfotrop in'yeksiya"} price={"70.000"} />
+          <ServicePrice type={"LOR maslahati"} price={"110.000"} />
+          <ServicePrice type={"LOR shifokorining qayta maslahati"} price={"55.000"} />
+          <ServicePrice type={"Quloq orqasiga in'yeksiya"} price={"40.000"} />
+          <ServicePrice type={"Quloq/tomoq/burun bo'shlig'idan begona jismni olib tashlash"} price={"100.000"} />
+          <ServicePrice type={"Quloqni yuvish"} price={"70.000"} />
+        </div>
+      </div>
       <div className="mt-10 w-full">
         <Swiper
           autoplay={{
@@ -153,7 +171,7 @@ const Home = () => {
             <div className="container">
               <img
                 src="https://swiperjs.com/demos/images/nature-4.jpg"
-                alt="doctor" 
+                alt="doctor"
               />
               <div className="description">
                 <div>
