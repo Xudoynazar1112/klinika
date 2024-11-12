@@ -54,47 +54,24 @@ const Header = () => {
               {t("header.haqida")}
             </Link>
           </li>
-          <li className="group relative">
-            <Link
-              to={"/services"}
-              className="bg-white text-black dark:bg-black dark:text-white"
-            >
-              {t("header.xizmatlar")}
-            </Link>
-            <ul className="absolute opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-300 bg-white dark:bg-black">
-              <li className="hover:bg-[#00959B] hover:text-white transition-all p-2">
-                <Link to={"/urologiya"} className="dark:text-white hover:text-white">
-                  {t("header.services.urologiya")}
-                </Link>
-              </li>
-              <li className="hover:bg-[#00959B] transition-all p-2">
-                <Link to={"/gnikologiya"} className="dark:text-white hover:text-white">
-                  {t("header.services.gnikologiya")}
-                </Link>
-              </li>
-              <li className="hover:bg-[#00959B] transition-all p-2">
-                <Link to={"/endokrinologiya"} className="dark:text-white hover:text-white">
-                  {t("header.services.endokrinologiya")}
-                </Link>
-              </li>
-              <li className="hover:bg-[#00959B] transition-all p-2">
-                <Link to={"/nevrologiya"} className="dark:text-white hover:text-white">
-                  {t("header.services.nevrologiya")}
-                </Link>
-              </li>
-              <li className="hover:bg-[#00959B] transition-all p-2">
-                <Link to={"/pediatriya"} className="dark:text-white hover:text-white">
-                  {t("header.services.pediatriya")}
-                </Link>
-              </li>
+          <li className="relative group">
+            <div className="bg-white text-black dark:bg-black dark:text-white">
+              <Link to={"/services"}>{t("header.xizmatlar")}</Link>
+            </div>
+            <ul className="absolute hidden group-hover:block transform translate-y-2 transition-all duration-300 bg-white dark:bg-black">
               <li className="hover:bg-[#00959B] transition-all p-2">
                 <Link to={"/lor"} className="dark:text-white hover:text-white">
                   {t("header.services.lor")}
                 </Link>
               </li>
               <li className="hover:bg-[#00959B] transition-all p-2">
-                <Link to={"/stamotologiya"} className="dark:text-white hover:text-white">
-                  {t("header.services.stamotoliya")}
+                <Link to={"/uzi"} className="dark:text-white hover:text-white">
+                  {t("header.services.uzi")}
+                </Link>
+              </li>
+              <li className="hover:bg-[#00959B] transition-all p-2">
+                <Link to={"/ekg"} className="dark:text-white hover:text-white">
+                  {t("header.services.ekg")}
                 </Link>
               </li>
             </ul>
@@ -200,60 +177,28 @@ const Header = () => {
                 {t("header.xizmatlar")}
               </Link>
               <ul className="list-disc pl-5 transition-all">
-                <li onClick={toggleHandle}>
-                  <Link
-                    to={"/urologiya"}
-                    className="bg-white text-black dark:bg-black dark:text-white"
-                  >
-                    {t("header.services.urologiya")}
-                  </Link>
-                </li>
-                <li onClick={toggleHandle}>
-                  <Link
-                    to={"/gnikologiya"}
-                    className="bg-white text-black dark:bg-black dark:text-white"
-                  >
-                    {t("header.services.gnikologiya")}
-                  </Link>
-                </li>
-                <li onClick={toggleHandle}>
-                  <Link
-                    to={"/endokrinologiya"}
-                    className="bg-white text-black dark:bg-black dark:text-white"
-                  >
-                    {t("header.services.endokrinologiya")}
-                  </Link>
-                </li>
-                <li onClick={toggleHandle}>
-                  <Link
-                    to={"/nevrologiya"}
-                    className="bg-white text-black dark:bg-black dark:text-white"
-                  >
-                    {t("header.services.nevrologiya")}
-                  </Link>
-                </li>
-                <li onClick={toggleHandle}>
-                  <Link
-                    to={"/pediatriya"}
-                    className="bg-white text-black dark:bg-black dark:text-white"
-                  >
-                    {t("header.services.pediatriya")}
-                  </Link>
-                </li>
-                <li onClick={toggleHandle}>
+                <li onClick={toggleHandle} className="hover:bg-[#00959B] transition-all p-2">
                   <Link
                     to={"/lor"}
-                    className="bg-white text-black dark:bg-black dark:text-white"
+                    className="dark:text-white hover:text-white"
                   >
                     {t("header.services.lor")}
                   </Link>
                 </li>
-                <li onClick={toggleHandle}>
+                <li onClick={toggleHandle} className="hover:bg-[#00959B] transition-all p-2">
                   <Link
-                    to={"/stamotologiya"}
-                    className="bg-white text-black dark:bg-black dark:text-white"
+                    to={"/uzi"}
+                    className="dark:text-white hover:text-white"
                   >
-                    {t("header.services.stamotoliya")}
+                    {t("header.services.uzi")}
+                  </Link>
+                </li>
+                <li onClick={toggleHandle} className="hover:bg-[#00959B] transition-all p-2">
+                  <Link
+                    to={"/ekg"}
+                    className="dark:text-white hover:text-white"
+                  >
+                    {t("header.services.ekg")}
                   </Link>
                 </li>
               </ul>

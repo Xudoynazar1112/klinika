@@ -3,13 +3,9 @@
         "haqida": "Klinika haqida",
         "xizmatlar": "Xizmatlar",
         "services": {
-            "urologiya": "Urologiya",
-            "gnikologiya": "Gnikologiya",
-            "endokrinologiya": "Endokrinologiya",
-            "nevrologiya": "Nevrologiya",
-            "pediatriya": "Pediatriya",
+            "ekg": "EKG",
             "lor": "Lor",
-            "stamotoliya": "Stamotologiya"
+            "uzi": "UZI"
         },
         "aloqa": "Aloqa",
         "uz": "O'zbek",

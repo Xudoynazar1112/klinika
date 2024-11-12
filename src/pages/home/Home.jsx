@@ -84,23 +84,7 @@ const Home = () => {
           <p className="mt-2">{t("klinika.body3")}</p>
         </div>
       </div>
-      <div className="md:px-48 px-10 py-10">
-        <h1>Lor xizmat narxlari</h1>
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
-          <ServicePrice type={"Burun ichi blokadasi"} price={"70.000"} />
-          <ServicePrice type={"Burunni yuvish"} price={"70.000"} />
-          <ServicePrice type={"Eshitish naychasini puflash"} price={"40.000"} />
-          <ServicePrice type={"Hiqildoqqa shifobaxsh eritmalarni quyish"} price={"60.000"} />
-          <ServicePrice type={"Ingalyasiya/tubus"} price={"30.000"} />
-          <ServicePrice type={"Kompress"} price={"25.000"} />
-          <ServicePrice type={"Limfotrop in'yeksiya"} price={"70.000"} />
-          <ServicePrice type={"LOR maslahati"} price={"110.000"} />
-          <ServicePrice type={"LOR shifokorining qayta maslahati"} price={"55.000"} />
-          <ServicePrice type={"Quloq orqasiga in'yeksiya"} price={"40.000"} />
-          <ServicePrice type={"Quloq/tomoq/burun bo'shlig'idan begona jismni olib tashlash"} price={"100.000"} />
-          <ServicePrice type={"Quloqni yuvish"} price={"70.000"} />
-        </div>
-      </div>
+      
       <div className="mt-10 w-full">
         <Swiper
           autoplay={{
@@ -124,63 +108,108 @@ const Home = () => {
         >
           <SwiperSlide>
             <div className="container">
-              <img src={doctor} alt="doctor" />
+              <img src="/doctor/Экг.jpg" alt="doctor" />
               <div className="description">
-                <div>
-                  <h2>Xo'jayin Boshliqovich</h2>
-                  <p>Boshliq</p>
-                </div>
-                <p>
-                  <span>20+</span>Ish tajribasi
-                </p>
+                <h1>EKG</h1>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className="slide">
             <div className="container">
-              <img src={doctor} alt="doctor" />
+              <img src="/doctor/Уролог.jpg" alt="doctor" />
               <div className="description">
-                <div>
-                  <h2>Xo'jayin Boshliqovich</h2>
-                  <p>Boshliq</p>
-                </div>
-                <p>
-                  <span>20+</span>Ish tajribasi
-                </p>
+                <h1>Urolog</h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <div className="container">
+              <img src="/doctor/Узи.jpg" alt="doctor" />
+              <div className="description">
+              <h1>UZI</h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <div className="container">
+              <img src="/doctor/Терапевт.jpg" alt="doctor" />
+              <div className="description">
+              <h1>Teropevt</h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <div className="container">
+              <img src="/doctor/Стационар.jpg" alt="doctor" />
+              <div className="description">
+              <h1>Statsionar</h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <div className="container">
+              <img src="/doctor/Пульмонолог.jpg" alt="doctor" />
+              <div className="description">
+              <h1>Pulmonolog</h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <div className="container">
+              <img src="/doctor/Мскт.jpg" alt="doctor" />
+              <div className="description">
+              <h1>MSKT</h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <div className="container">
+              <img src="/doctor/endocrinology-2.jpg" alt="doctor" />
+              <div className="description">
+              <h1>Endikronolog</h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <div className="container">
+              <img src="/doctor/kardiolog.jpg" alt="doctor" />
+              <div className="description">
+              <h1>Kardiolog</h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <div className="container">
+              <img src="/doctor/nevrapatoliog.jpg" alt="doctor" />
+              <div className="description">
+              <h1>Nevropotolog</h1>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className="slide">
             <div className="container">
               <img
-                src="https://swiperjs.com/demos/images/nature-3.jpg"
+                src="/doctor/yzbo7uslqlbtfkz2s9gc5xyj7yvj118w.jpg"
                 alt="doctor"
               />
               <div className="description">
-                <div>
-                  <h2>Xo'jayin Boshliqovich</h2>
-                  <p>Boshliq</p>
-                </div>
-                <p>
-                  <span>20+</span>Ish tajribasi
-                </p>
+              <h1>Kardiolog</h1>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className="slide">
             <div className="container">
-              <img
-                src="https://swiperjs.com/demos/images/nature-4.jpg"
-                alt="doctor"
-              />
+              <img src="/doctor/Гинеколог.png" alt="doctor" />
               <div className="description">
-                <div>
-                  <h2>Xo'jayin Boshliqovich</h2>
-                  <p>Boshliq</p>
-                </div>
-                <p>
-                  <span>20+</span>Ish tajribasi
-                </p>
+              <h1>Ginikolog</h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <div className="container">
+              <img src="/doctor/Лаборатория.jpg" alt="doctor" />
+              <div className="description">
+              <h1>Labaratoriya</h1>
               </div>
             </div>
           </SwiperSlide>

@@ -3,13 +3,9 @@
         "haqida": "About Hospital",
         "xizmatlar": "Services",
         "services": {
-            "urologiya": "Urology",
-            "gnikologiya": "Gynecology",
-            "endokrinologiya": "Endocrinology",
-            "nevrologiya": "Neurology",
-            "pediatriya": "Pediatrics",
+            "ekg": "EKG",
             "lor": "Lor",
-            "stamotoliya": "Stomatology"
+            "uzi": "UZI"
         },
         "aloqa": "Contact",
         "uz": "Uzbek",

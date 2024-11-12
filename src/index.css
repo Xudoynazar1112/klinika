@@ -27,10 +27,9 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  margin: 0 auto;
+  /* min-width: 320px; */
+  max-width: 1540px;
   min-height: 100vh;
 }
 
@@ -77,7 +76,9 @@ button:focus-visible {
 }
 .swiper-slide .container .description {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  color: white;
   background-color: #00959B;
   padding: 0.5rem 2rem;
 }
