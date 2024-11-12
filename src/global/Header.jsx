@@ -55,8 +55,8 @@ const Header = () => {
             </Link>
           </li>
           <li className="relative group">
-            <div className="bg-white text-black dark:bg-black dark:text-white">
-              <Link to={"/services"}>{t("header.xizmatlar")}</Link>
+            <div>
+              <Link to={"/services"} className="bg-white text-black dark:bg-black dark:text-white">{t("header.xizmatlar")}</Link>
             </div>
             <ul className="absolute hidden group-hover:block transform translate-y-2 transition-all duration-300 bg-white dark:bg-black">
               <li className="hover:bg-[#00959B] transition-all p-2">
