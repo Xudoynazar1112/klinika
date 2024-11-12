@@ -163,7 +163,7 @@ const Header = () => {
                 </div>
                 <a
                   href="tel:+998991100033"
-                  className=" text-2xl hover:text-green-300 transition-all flex gap-3 items-center justify-center"
+                  className="text-2xl hover:text-green-300 bg-white dark:bg-black dark:text-white transition-all flex gap-3 items-center justify-center"
                 >
                   +998 99 110 00 33
                 </a>
