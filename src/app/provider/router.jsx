@@ -3,7 +3,6 @@ import MainWrapper from "../../global/MainWrapper";
 import Home from '../../pages/home/Home'
 import NotFound from "../../pages/notFound/NotFound";
 import Lor from "../../pages/doctor/Lor";
-import Services from "../../pages/Services/Services";
 import Contact from "../../pages/contact/Contact";
 import Ekg from "../../pages/doctor/Ekg";
 import Uzi from "../../pages/doctor/Uzi";
@@ -29,7 +28,7 @@ const router = createBrowserRouter(
         },
         {
             path: "/services",
-            element: <Services />
+            element: <Lor />
         },
         {
             path: "/contact",
