@@ -4,11 +4,11 @@ import ServicePrice from "../../components/price/ServicePrice";
 const Lor = () => {
   return (
     <>
-      <div className="grid grid-cols-2 place-items-center px-28 md:mt-20 gap-5">
+      <div className="grid md:grid-cols-2 place-items-center md:px-28 px-10 md:mt-20 gap-5">
         <div className="flex flex-col gap-5 font-sans">
-          <h1 className="font-serif">
+          <h3 className="font-serif md:text-6xl text-3xl mt-5">
             «Estelife medical center»da 24/7 LOR xizmati
-          </h1>
+          </h3>
           <p>
             Estelife medical center barcha yoshdagi quloq, burun va tomoq
             kasalliklariga chalingan bemorlarga yuqori malakali tibbiy yordam
@@ -32,7 +32,7 @@ const Lor = () => {
         </div>
       </div>
       <div className="md:px-48 px-10 py-10">
-        <h1>Lor xizmat narxlari</h1>
+        <h3 className="md:text-6xl text-3xl mb-5">Lor xizmat narxlari</h3>
         <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
           <ServicePrice type={"Burun ichi blokadasi"} price={"70.000"} />
           <ServicePrice type={"Burunni yuvish"} price={"70.000"} />
@@ -57,9 +57,9 @@ const Lor = () => {
           <ServicePrice type={"Quloqni yuvish"} price={"70.000"} />
         </div>
       </div>
-      <div className="w-full">
-        <h1 className="text-center">Tashxis turlari va bosqichlari</h1>
-        <div className="grid md:grid-cols-4 grid-cols-2 place-items-center mt-3 w-full ">
+      <div className="w-full md:px-28 px-10">
+        <h3 className="text-center md:text-6xl text-3xl md:my-10">Tashxis turlari va bosqichlari</h3>
+        <div className="grid md:grid-cols-4 grid-cols-1 place-items-center mt-3 w-full ">
           <div className="w-64 flex flex-col items-center">
             <img
               src="https://www.biogenmed.uz/wp-content/uploads/2022/04/our-services-otolar.svg"

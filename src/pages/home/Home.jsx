@@ -75,7 +75,7 @@ const Home = () => {
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-48 px-10 py-10 mt-20 bg-gradient-to-l from-blue-400">
         <div data-aos="fade-up">
-          <img src={workers2} alt="employee" className="w-[37rem]" />
+          <img src='/doctor/collegee.jpg' alt="employee" className="w-[37rem]" />
         </div>
         <div data-aos="fade-up">
           <h1 className="md:text-6xl text-4xl">{t("klinika.head")}</h1>
