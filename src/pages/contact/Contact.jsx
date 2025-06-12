@@ -54,7 +54,7 @@ const Contact = () => {
     setSubmitError("");
 
     try {
-      const response = await axios.post("http://ec2-13-60-218-79.eu-north-1.compute.amazonaws.com:8000/api/customers/", formData);
+      const response = await axios.post("https://api.estelifemed.uz/api/customers/", formData);
       if (response.status === 201 || response.status === 200) {
         setSubmitSuccess(true);
         setFormData({
