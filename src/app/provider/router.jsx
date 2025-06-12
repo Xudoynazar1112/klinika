@@ -7,38 +7,53 @@ import Contact from "../../pages/contact/Contact";
 import Ekg from "../../pages/doctor/Ekg";
 import Uzi from "../../pages/doctor/Uzi";
 
+// Route constants
+export const ROUTES = {
+  HOME: '/',
+  SERVICES: '/services',
+  LOR: '/lor',
+  EKG: '/ekg',
+  UZI: '/uzi',
+  CONTACT: '/contact',
+  ABOUT: '/about',
+};
 
-const router = createBrowserRouter(
-    MainWrapper([
-        {
-            path: "/",
-            element: <Home />
-        },
-        {
-            path: "/lor",
-            element: <Lor />
-        },
-        {
-            path: "/ekg",
-            element: <Ekg />
-        },
-        {
-            path: "/uzi",
-            element: <Uzi />
-        },
-        {
-            path: "/services",
-            element: <Lor />
-        },
-        {
-            path: "/contact",
-            element: <Contact />
-        },
-        {
-            path: "*",
-            element: <NotFound />
-        },
-    ])
-)
+// Route configuration
+const routes = [
+  {
+    path: ROUTES.HOME,
+    element: <Home />,
+  },
+  {
+    path: ROUTES.LOR,
+    element: <Lor />,
+  },
+  {
+    path: ROUTES.EKG,
+    element: <Ekg />,
+  },
+  {
+    path: ROUTES.UZI,
+    element: <Uzi />,
+  },
+  {
+    path: ROUTES.SERVICES,
+    element: <Lor />,
+  },
+  {
+    path: ROUTES.CONTACT,
+    element: <Contact />,
+  },
+  {
+    path: ROUTES.ABOUT,
+    element: <NotFound />, // TODO: Create About page
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
+];
+
+const router = createBrowserRouter(MainWrapper(routes));
 
 export default router;

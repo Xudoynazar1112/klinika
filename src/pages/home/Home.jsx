@@ -29,7 +29,7 @@ const Home = () => {
           <p className="mt-5 text-black dark:text-white">
             {t("home.soglik-body")}
           </p>
-          <div data-aos="flip-up" className="flex pt-20 gap-5">
+          <div data-aos="flip-up" className="flex pt-20 gap-5 pr-10">
             <Link
               to={"/contact"}
               className="border-black dark:border-white border-2 py-2 px-4 rounded-2xl text-2xl w-full text-center text-black dark:text-white hover:bg-[#00959B] hover:text-white transition-all"

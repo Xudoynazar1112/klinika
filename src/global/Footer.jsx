@@ -40,10 +40,10 @@ const Footer = () => {
             <BsFillTelephoneFill />{" "}
             <a href="tel:+998991100030">+998 (99) 110-00-30</a>
           </div>
-          <div className="flex items-center gap-2 md:text-xl text-lg">
+          <div className="flex items-center gap-2 md:text-xl text-base">
             <MdOutlineEmail /> <p>esterlifemedicalcenter@gmail.com</p>
           </div>
-          <div className="flex items-center gap-2 md:text-xl text-lg">
+          <div className="flex items-center gap-2 md:text-xl text-base">
             <FaRegAddressCard /> <p>https://estelifemedicalcenter.uz</p>
           </div>
           <div className="pt-5">

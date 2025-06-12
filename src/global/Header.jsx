@@ -6,21 +6,23 @@ import { useTranslation } from "react-i18next";
 import { FaSun } from "react-icons/fa6";
 import { MdNightsStay } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import { ROUTES } from "../app/provider/router";
 
 const Header = () => {
   const [t, i18n] = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const language = localStorage.getItem("i18nextLng");
+
   const handleChange = (event) => {
     const selectLanguage = event.target.value;
     i18n.changeLanguage(selectLanguage);
   };
+
   const toggleHandle = () => {
     setIsOpen(!isOpen);
   };
 
   const [darkMode, setDarkMode] = useState(() => {
-    // Initialize from localStorage or default to light mode
     return localStorage.getItem("theme") === "dark";
   });
 
@@ -32,23 +34,23 @@ const Header = () => {
   };
 
   useEffect(() => {
-    // Apply dark mode class on initial load based on localStorage value
     if (darkMode) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
+
   return (
     <>
-      <div className="flex justify-between items-center w-full md:px-48 px-5  bg-white text-black dark:text-white dark:bg-black">
-        <Link to={"/"}>
+      <div className="flex justify-between items-center w-full md:px-48 px-5 bg-white text-black dark:text-white dark:bg-black">
+        <Link to={ROUTES.HOME}>
           <img src={logo} alt="logo" className="md:w-24 w-16" />
         </Link>
         <ul className="md:flex md:gap-5 md:text-2xl hidden">
           <li>
             <Link
-              to={"/haqida"}
+              to={ROUTES.ABOUT}
               className="bg-white text-black dark:bg-black dark:text-white"
             >
               {t("header.haqida")}
@@ -56,21 +58,23 @@ const Header = () => {
           </li>
           <li className="relative group">
             <div>
-              <Link to={"/services"} className="bg-white text-black dark:bg-black dark:text-white">{t("header.xizmatlar")}</Link>
+              <Link to={ROUTES.SERVICES} className="bg-white text-black dark:bg-black dark:text-white">
+                {t("header.xizmatlar")}
+              </Link>
             </div>
             <ul className="absolute hidden group-hover:block transform translate-y-2 transition-all duration-300 bg-white dark:bg-black">
               <li className="hover:bg-[#00959B] transition-all p-2">
-                <Link to={"/lor"} className="dark:text-white hover:text-white">
+                <Link to={ROUTES.LOR} className="dark:text-white hover:text-white">
                   {t("header.services.lor")}
                 </Link>
               </li>
               <li className="hover:bg-[#00959B] transition-all p-2">
-                <Link to={"/uzi"} className="dark:text-white hover:text-white">
+                <Link to={ROUTES.UZI} className="dark:text-white hover:text-white">
                   {t("header.services.uzi")}
                 </Link>
               </li>
               <li className="hover:bg-[#00959B] transition-all p-2">
-                <Link to={"/ekg"} className="dark:text-white hover:text-white">
+                <Link to={ROUTES.EKG} className="dark:text-white hover:text-white">
                   {t("header.services.ekg")}
                 </Link>
               </li>
@@ -78,7 +82,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to={"/contact"}
+              to={ROUTES.CONTACT}
               className="bg-white text-black dark:bg-black dark:text-white"
             >
               {t("header.aloqa")}
@@ -87,16 +91,16 @@ const Header = () => {
           <li>
             <button
               onClick={toggleDarkMode}
-              className="p-1 mr-2 dark:text-white dark:bg-black md:text-3xl text-xl rounded"
+              className="p-1 mr-2 dark:text-white dark:bg-black bg-white md:text-3xl text-xl rounded"
             >
               {darkMode ? <FaSun /> : <MdNightsStay />}
             </button>
           </li>
           <li>
-            <div className="p-1 px-4 h-full bg-[#00959B] rounded-2xl flex gap-3 items-center justify-center text-white ">
+            <div className="p-1 px-4 h-full bg-[#00959B] rounded-2xl flex gap-3 items-center justify-center text-white">
               <a
                 href="tel:+998991100033"
-                className=" text-2xl text-white hover:text-green-300 transition-all flex gap-3 items-center justify-center"
+                className="text-2xl text-white hover:text-green-300 transition-all flex gap-3 items-center justify-center"
               >
                 <FaPhoneAlt />
                 {t("call")}
@@ -117,6 +121,7 @@ const Header = () => {
             </select>
           </li>
         </ul>
+
         <div className="md:hidden flex justify-around items-center pl-5">
           <p className="text-[#006769] text-center uppercase">
             Estelife medical center
@@ -129,6 +134,7 @@ const Header = () => {
           </button>
         </div>
       </div>
+
       {isOpen && (
         <div className="fixed right-0 top-0 h-full w-full bg-white text-black dark:bg-black dark:text-white z-10">
           <div className="text-end px-5 pt-5 flex justify-between items-center">
@@ -140,11 +146,11 @@ const Header = () => {
               {isOpen ? <X /> : <Menu />}
             </button>
           </div>
-          <ul className="flex flex-col pt-16 items-start pl-10 gap-5 text-xl ">
+          <ul className="flex flex-col pt-16 items-start pl-10 gap-5 text-xl">
             <li className="flex justify-between items-center gap-32">
               <Link
                 onClick={toggleHandle}
-                to={"/about"}
+                to={ROUTES.ABOUT}
                 className="bg-white text-black dark:bg-black dark:text-white"
               >
                 {t("header.haqida")}
@@ -157,7 +163,7 @@ const Header = () => {
               </button>
             </li>
             <li onClick={toggleHandle}>
-              <div className="p-1 px-4 h-full flex gap-3 items-center justify-center text-white ">
+              <div className="p-1 px-4 h-full flex gap-3 items-center justify-center text-white">
                 <div className="bg-[#00959B] rounded-full p-3">
                   <FaPhoneAlt />
                 </div>
@@ -171,7 +177,7 @@ const Header = () => {
             </li>
             <li onClick={toggleHandle}>
               <Link
-                to={"/services"}
+                to={ROUTES.SERVICES}
                 className="bg-white text-black dark:bg-black dark:text-white"
               >
                 {t("header.xizmatlar")}
@@ -179,7 +185,7 @@ const Header = () => {
               <ul className="list-disc pl-5 transition-all">
                 <li onClick={toggleHandle} className="hover:bg-[#00959B] transition-all p-2">
                   <Link
-                    to={"/lor"}
+                    to={ROUTES.LOR}
                     className="dark:text-white hover:text-white"
                   >
                     {t("header.services.lor")}
@@ -187,7 +193,7 @@ const Header = () => {
                 </li>
                 <li onClick={toggleHandle} className="hover:bg-[#00959B] transition-all p-2">
                   <Link
-                    to={"/uzi"}
+                    to={ROUTES.UZI}
                     className="dark:text-white hover:text-white"
                   >
                     {t("header.services.uzi")}
@@ -195,7 +201,7 @@ const Header = () => {
                 </li>
                 <li onClick={toggleHandle} className="hover:bg-[#00959B] transition-all p-2">
                   <Link
-                    to={"/ekg"}
+                    to={ROUTES.EKG}
                     className="dark:text-white hover:text-white"
                   >
                     {t("header.services.ekg")}
@@ -205,7 +211,7 @@ const Header = () => {
             </li>
             <li onClick={toggleHandle}>
               <Link
-                to={"/contact"}
+                to={ROUTES.CONTACT}
                 className="bg-white text-black dark:bg-black dark:text-white"
               >
                 {t("header.aloqa")}
