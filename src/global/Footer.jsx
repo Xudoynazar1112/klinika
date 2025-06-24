@@ -62,10 +62,11 @@ const Footer = () => {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d16085.118637508229!2d69.24815590937108!3d41.33500183876555!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIwJzAzLjQiTiA2OcKwMTUnMDMuMSJF!5e0!3m2!1sen!2s!4v1729940251670!5m2!1sen!2s"
             width="100%"
-            height="100%"
+            // height="100%"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            className="h-72"
           ></iframe>
         </div>
       </div>

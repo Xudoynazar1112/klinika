@@ -29,8 +29,8 @@ a:hover {
 body {
   margin: 0 auto;
   /* min-width: 320px; */
-  min-width: 1540px;
-  min-height: 100vh;
+  /* min-width: 1540px;
+  min-height: 100vh; */
 }
 
 h1 {
